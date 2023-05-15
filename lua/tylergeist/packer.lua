@@ -14,15 +14,11 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use("christoomey/vim-tmux-navigator")
 
-  use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
-  })
 
+  use('nvim-tree/nvim-web-devicons')
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
@@ -48,5 +44,27 @@ return require('packer').startup(function(use)
 	  {'hrsh7th/cmp-nvim-lsp'}, -- Required
 	  {'L3MON4D3/LuaSnip'},     -- Required
   }
+}
+
+use {
+    "SmiteshP/nvim-navic",
+    requires = "neovim/nvim-lspconfig"
+}
+
+use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional
+  },
+  config = function()
+    require("nvim-tree").setup {}
+  end
+}
+
+use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
 }
 end)

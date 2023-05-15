@@ -34,4 +34,12 @@ lsp.set_preferences({
 -- (Optional) Configure lua language server for neovim
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
+local navic = require("nvim-navic")
+
+require("lspconfig").clangd.setup {
+    on_attach = function(client, bufnr) 
+        navic.attach(client, bufnr)
+    end
+}
+
 lsp.setup()
