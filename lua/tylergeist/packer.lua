@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
-
+  use('m4xshen/autoclose.nvim')
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v2.x',
@@ -67,4 +67,8 @@ use {
         require('Comment').setup()
     end
 }
+ use {'romgrk/barbar.nvim', requires = {
+  'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+  'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+}}
 end)
