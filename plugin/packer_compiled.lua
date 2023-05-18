@@ -90,20 +90,21 @@ _G.packer_plugins = {
     path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
     url = "https://github.com/m4xshen/autoclose.nvim"
   },
-  ["barbar.nvim"] = {
+  ["barbecue.nvim"] = {
+    config = { "\27LJ\2\nê\t\0\0\5\0G\0K6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2E\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\0034\4\0\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\0035\4\21\0=\4\22\0035\4\23\0=\4\24\0035\4\25\0=\4\26\0035\4\27\0=\4\28\0035\4\29\0=\4\30\0035\4\31\0=\4 \0035\4!\0=\4\"\0035\4#\0=\4$\0035\4%\0=\4&\0035\4'\0=\4(\0035\4)\0=\4*\0035\4+\0=\4,\0035\4-\0=\4.\0035\4/\0=\0040\0035\0041\0=\0042\0035\0043\0=\0044\0035\0045\0=\0046\0035\0047\0=\0048\0035\0049\0=\4:\0035\4;\0=\4<\0035\4=\0=\4>\0035\4?\0=\4@\0035\4A\0=\4B\0035\4C\0=\4D\3=\3F\2B\0\2\1K\0\1\0\ntheme\1\0\0\27context_type_parameter\1\0\1\afg\f#ac8fe4\21context_operator\1\0\1\afg\f#ac8fe4\18context_event\1\0\1\afg\f#ac8fe4\19context_struct\1\0\1\afg\f#ac8fe4\24context_enum_member\1\0\1\afg\f#ac8fe4\17context_null\1\0\1\afg\f#ac8fe4\16context_key\1\0\1\afg\f#ac8fe4\19context_object\1\0\1\afg\f#ac8fe4\18context_array\1\0\1\afg\f#ac8fe4\20context_boolean\1\0\1\afg\f#ac8fe4\19context_number\1\0\1\afg\f#ac8fe4\19context_string\1\0\1\afg\f#ac8fe4\21context_constant\1\0\1\afg\f#ac8fe4\21context_variable\1\0\1\afg\f#ac8fe4\21context_function\1\0\1\afg\f#ac8fe4\22context_interface\1\0\1\afg\f#ac8fe4\17context_enum\1\0\1\afg\f#ac8fe4\24context_constructor\1\0\1\afg\f#ac8fe4\18context_field\1\0\1\afg\f#ac8fe4\21context_property\1\0\1\afg\f#ac8fe4\19context_method\1\0\1\afg\f#ac8fe4\18context_class\1\0\1\afg\f#ac8fe4\20context_package\1\0\1\afg\f#ac8fe4\22context_namespace\1\0\1\afg\f#ac8fe4\19context_module\1\0\1\afg\f#ac8fe4\17context_file\1\0\1\afg\f#ac8fe4\fcontext\rbasename\1\0\1\tbold\2\fdirname\1\0\1\afg\f#737aa2\rmodified\1\0\1\afg\f#737aa2\14separator\1\0\1\afg\f#737aa2\rellipsis\1\0\1\afg\f#737aa2\vnormal\1\0\0\1\0\1\afg\f#c0caf5\nsetup\rbarbecue\frequire\0" },
     loaded = true,
-    path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/barbar.nvim",
-    url = "https://github.com/romgrk/barbar.nvim"
+    path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/barbecue.nvim",
+    url = "https://github.com/utilyre/barbecue.nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["gitsigns.nvim"] = {
+  ["copilot.vim"] = {
     loaded = true,
-    path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
-    url = "https://github.com/lewis6991/gitsigns.nvim"
+    path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
   },
   harpoon = {
     loaded = true,
@@ -114,6 +115,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -129,6 +135,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/NvChad/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -150,6 +161,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-context"] = {
+    loaded = true,
+    path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
+  ["nvim-ts-rainbow2"] = {
+    loaded = true,
+    path = "/Users/tluby/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow2",
+    url = "https://github.com/HiPhish/nvim-ts-rainbow2"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -199,14 +225,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
+-- Config for: barbecue.nvim
+time([[Config for barbecue.nvim]], true)
+try_loadstring("\27LJ\2\nê\t\0\0\5\0G\0K6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2E\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\0034\4\0\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\0035\4\21\0=\4\22\0035\4\23\0=\4\24\0035\4\25\0=\4\26\0035\4\27\0=\4\28\0035\4\29\0=\4\30\0035\4\31\0=\4 \0035\4!\0=\4\"\0035\4#\0=\4$\0035\4%\0=\4&\0035\4'\0=\4(\0035\4)\0=\4*\0035\4+\0=\4,\0035\4-\0=\4.\0035\4/\0=\0040\0035\0041\0=\0042\0035\0043\0=\0044\0035\0045\0=\0046\0035\0047\0=\0048\0035\0049\0=\4:\0035\4;\0=\4<\0035\4=\0=\4>\0035\4?\0=\4@\0035\4A\0=\4B\0035\4C\0=\4D\3=\3F\2B\0\2\1K\0\1\0\ntheme\1\0\0\27context_type_parameter\1\0\1\afg\f#ac8fe4\21context_operator\1\0\1\afg\f#ac8fe4\18context_event\1\0\1\afg\f#ac8fe4\19context_struct\1\0\1\afg\f#ac8fe4\24context_enum_member\1\0\1\afg\f#ac8fe4\17context_null\1\0\1\afg\f#ac8fe4\16context_key\1\0\1\afg\f#ac8fe4\19context_object\1\0\1\afg\f#ac8fe4\18context_array\1\0\1\afg\f#ac8fe4\20context_boolean\1\0\1\afg\f#ac8fe4\19context_number\1\0\1\afg\f#ac8fe4\19context_string\1\0\1\afg\f#ac8fe4\21context_constant\1\0\1\afg\f#ac8fe4\21context_variable\1\0\1\afg\f#ac8fe4\21context_function\1\0\1\afg\f#ac8fe4\22context_interface\1\0\1\afg\f#ac8fe4\17context_enum\1\0\1\afg\f#ac8fe4\24context_constructor\1\0\1\afg\f#ac8fe4\18context_field\1\0\1\afg\f#ac8fe4\21context_property\1\0\1\afg\f#ac8fe4\19context_method\1\0\1\afg\f#ac8fe4\18context_class\1\0\1\afg\f#ac8fe4\20context_package\1\0\1\afg\f#ac8fe4\22context_namespace\1\0\1\afg\f#ac8fe4\19context_module\1\0\1\afg\f#ac8fe4\17context_file\1\0\1\afg\f#ac8fe4\fcontext\rbasename\1\0\1\tbold\2\fdirname\1\0\1\afg\f#737aa2\rmodified\1\0\1\afg\f#737aa2\14separator\1\0\1\afg\f#737aa2\rellipsis\1\0\1\afg\f#737aa2\vnormal\1\0\0\1\0\1\afg\f#c0caf5\nsetup\rbarbecue\frequire\0", "config", "barbecue.nvim")
+time([[Config for barbecue.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
