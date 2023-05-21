@@ -23,14 +23,12 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use('m4xshen/autoclose.nvim')
     use('github/copilot.vim')
-    use {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v2.x',
-        requires = {
-            -- LSP Support
+    use { 'VonHeikemen/lsp-zero.nvim',
+        branch = 'v1.x',
+        requires = {                     -- LSP Support
             { 'neovim/nvim-lspconfig' }, -- Required
             {
-                               -- Optional
+                -- Optional
                 'williamboman/mason.nvim',
                 run = function()
                     pcall(vim.cmd, 'MasonUpdate')
@@ -39,9 +37,17 @@ return require('packer').startup(function(use)
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' }, -- Required
-            { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' }, -- Required
+            { 'hrsh7th/nvim-cmp' },         -- Required
+            { 'neovim/nvim-lspconfig' },
+            { 'hrsh7th/cmp-nvim-lsp' },     -- Required
+            { 'hrsh7th/cmp-buffer' },       -- Optional
+            { 'hrsh7th/cmp-path' },         -- Optional
+            { 'saadparwaiz1/cmp_luasnip' }, -- Optional
+            { 'hrsh7th/cmp-nvim-lua' },     -- Optional
+
+            -- Snippets
+            { 'L3MON4D3/LuaSnip' },             -- Required
+            { 'rafamadriz/friendly-snippets' }, -- Optional
         }
     }
 
@@ -123,6 +129,30 @@ return require('packer').startup(function(use)
     })
 
     use('NvChad/nvim-colorizer.lua')
-    use('HiPhish/nvim-ts-rainbow2')
+    use('mrjones2014/nvim-ts-rainbow')
     use('windwp/nvim-ts-autotag')
+    use('mhartington/formatter.nvim')
+    use("jose-elias-alvarez/null-ls.nvim")
+    use('yuezk/vim-js')
+    use('maxmellon/vim-jsx-pretty')
+    use("jose-elias-alvarez/typescript.nvim")
+    use("onsails/lspkind.nvim")
+    use("jayp0521/mason-null-ls.nvim")
+    use({
+        "glepnir/lspsaga.nvim",
+        branch = "main",
+        requires = {
+            { "nvim-tree/nvim-web-devicons" },
+            { "nvim-treesitter/nvim-treesitter" }
+        }
+    })
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    })
 end)

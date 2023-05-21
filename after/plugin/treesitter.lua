@@ -11,7 +11,6 @@ require 'nvim-treesitter.configs'.setup {
 
     -- Automatically install missing parsers when entering buffer
     -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
-    auto_install = true,
 
 
     highlight = {
@@ -26,7 +25,17 @@ require 'nvim-treesitter.configs'.setup {
     rainbow = {
         enable = true,
         extended_mode = true,
-        disable = { "html", "jsx" },
+        disable = { "html" },
         max_file_lines = nil,
+        colors = {
+            "#F7F6C5",
+            "#DC6D04",
+            "#C2E7DA",
+            "#D7BFDC",
+            "#92DCE5",
+            "#9046CF",
+            "#B76D68",
+        },
+
     },
 }

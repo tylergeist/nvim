@@ -5,6 +5,7 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
+vim.opt.ignorecase = true
 
 vim.opt.smartindent = true
 -- test this no wrapping
@@ -128,6 +129,7 @@ require('rose-pine').setup({
 
 vim.cmd('colorscheme rose-pine')
 -- show barbecue globally
+vim.cmd 'highlight! link rainbowco11 RainbowViolet'
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
