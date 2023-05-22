@@ -133,6 +133,18 @@ lspconfig["emmet_ls"].setup({
     filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
 })
 
+-- configure sourceKit for xBase setup
+--   
+lspconfig.sourcekit.setup({
+    capabilities = capabilities,
+    on_attach = on_attach,
+    cmd = { "/usr/local/bin/sourcekit-lsp" },
+    filetypes = { "xbase" },
+    root_dir = function(fname)
+        return lspconfig.util.find_git_ancestor(fname) or vim.loop.os_homedir()
+    end,
+})
+
 -- configure lua server (with special settings)
 lspconfig["lua_ls"].setup({
     capabilities = capabilities,
